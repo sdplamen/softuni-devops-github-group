@@ -19,7 +19,7 @@ function deleteTown() {
     else
         showMessage(townName + " not found.");
 }
-
+// fix-function addTown
 function addTown() {
     let townName = $('#townNameForAdd').val().trim();
     $('#townNameForAdd').val('');
