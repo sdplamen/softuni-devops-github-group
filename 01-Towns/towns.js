@@ -21,11 +21,18 @@ function deleteTown() {
 }
 
 function addTown() {
-    let townName = $('#townNameForAdd').val();
+    let townName = $('#townNameForAdd').val().trim();
     $('#townNameForAdd').val('');
+
+    if (townName === '') {
+        showMessage("Empty town name.");
+        return;
+    }
+
     $('#towns').append($('<option>').text(townName));
-    $('#result').text(townName + " added.");
+    showMessage(townName + " added.");
 }
+
 
 function showMessage(msg) {
     $('#result').text(msg).css("display", "block");
