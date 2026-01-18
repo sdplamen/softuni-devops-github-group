@@ -288,6 +288,7 @@ button:hover {
     box-shadow: 1px 1px 11px 8px #e7a83a;
 }
 
+/* start Verifier */
 .background {
     width: 430px;
     height: 415px;
@@ -306,14 +307,12 @@ button:hover {
 
 .shape:first-child {
     background: linear-gradient(#36251b, #7c4f30);
-;
     left: -80px;
     top: -80px;
 }
 
 .shape:last-child {
     background: linear-gradient(to right, #daa022, #f09819);
-;
     right: -30px;
     bottom: -80px;
 }
@@ -432,6 +431,15 @@ button:hover {
     margin-right: 20px;
 }
 
+.confirm-reservation {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-end;
+    justify-content: center;
+}
+/* end Verifier */
 .selected-room{
     background-color: #cfcbca !important;
 }
