@@ -27,3 +27,4 @@ document.querySelector('#search-form-button').addEventListener('click', (e) => s
 
 function searchFormData(e) {
     e.preventDefault();
+}
