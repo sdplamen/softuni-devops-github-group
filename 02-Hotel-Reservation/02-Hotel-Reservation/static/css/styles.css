@@ -538,8 +538,3 @@ button {
 button:hover {
     box-shadow: 1px 1px 11px 8px #e7a83a;
 }
-/* end Verifier */
-.selected-room{
-    background-color: #cfcbca !important;
-}
-
