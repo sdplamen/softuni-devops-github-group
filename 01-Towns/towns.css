@@ -1,257 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
+@import url('https://fonts.googleapis.com/css?family=Rubik');
 
 body {
-	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-	background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-	background-attachment: fixed;
-	min-height: 100vh;
-	padding: 40px 20px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 30px;
+	font-family: 'Rubik', sans-serif;
+}
+
+* {
+	box-sizing: content-box;
 }
 
 article {
-	background: rgba(255, 255, 255, 0.95);
-	backdrop-filter: blur(10px);
-	padding: 24px;
-	border-radius: 20px;
-	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	width: 100%;
-	max-width: 320px;
+	background: #CCC;
+	width: 180px;
+	padding: 10px;
+	margin: 10px;
+	display: inline-block;
+	vertical-align: top;
 }
 
-article:hover {
-	transform: translateY(-4px);
-	box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
-}
-
-/* Първата секция (Towns) - по-голяма и отгоре */
-article:first-of-type {
-	max-width: 500px;
-	width: 100%;
-}
-
-article:first-of-type > select {
-	min-height: 200px;
-	font-size: 15px;
-	padding: 12px;
-}
-
-/* Shuffle секцията - компактна */
-article:nth-child(3) {
-	padding: 20px 24px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: auto;
-}
-
-button#btnShuffle {
-	margin: 0;
-	width: auto;
-	min-width: 140px;
-}
-
-/* Add секцията - компактна */
-article:nth-child(4) {
-	padding-bottom: 20px;
-}
-
-article:nth-child(4) > button {
-	margin-top: 12px;
-}
-
-article > header {
-	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+article>header {
+	background: #5F5F5F;
 	color: white;
-	margin: 0 0 18px 0;
-	padding: 14px 18px;
-	border-radius: 12px;
-	text-align: center;
-	font-weight: 600;
-	font-size: 15px;
-	letter-spacing: 0.3px;
-	box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+	margin: 0px 0px 10px 0px;
+	padding: 4px 6px;
 }
 
-article > header > h1 {
-	margin: 0;
-	font-size: 15px;
-	font-weight: 600;
+article>header>h1 {
+	margin: 0px;
 }
 
-article > select {
-	width: 100%;
-	padding: 12px 14px;
-	border: 2px solid #e8e8e8;
-	border-radius: 12px;
-	background: white;
-	font-family: inherit;
-	font-size: 14px;
-	color: #2d3748;
-	cursor: pointer;
-	transition: all 0.2s ease;
-	outline: none;
-	appearance: none;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23667eea' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
-	background-repeat: no-repeat;
-	background-position: right 14px center;
-	padding-right: 40px;
+article>select {
+	width: 178px;
 }
 
-article > select:hover {
-	border-color: #667eea;
-	background-color: #f8f9ff;
+article>input {
+	width: 176px;
 }
 
-article > select:focus {
-	border-color: #667eea;
-	box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
-	background-color: #f8f9ff;
-}
-
-article > select option {
-	padding: 12px;
-	background: white;
-}
-
-article > input {
-	width: 100%;
-	padding: 14px 16px;
-	border: 2px solid #e8e8e8;
-	border-radius: 12px;
-	font-family: inherit;
-	font-size: 14px;
-	color: #2d3748;
-	transition: all 0.2s ease;
-	outline: none;
-	margin-bottom: 12px;
-	background: white;
-}
-
-article > input::placeholder {
-	color: #a0aec0;
-}
-
-article > input:hover {
-	border-color: #cbd5e0;
-	background-color: #f8f9ff;
-}
-
-article > input:focus {
-	border-color: #667eea;
-	box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
-	background-color: #f8f9ff;
-}
-
-article > button {
+article>button {
 	display: block;
-	margin: 16px auto 0 auto;
+	margin: 10px auto 0px auto;
 	border: none;
-	border-radius: 12px;
-	padding: 14px 28px;
-	background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+	border-radius: 3px;
+	padding: 5px 15px;
+	background: green;
 	color: white;
-	font-weight: 600;
-	font-size: 14px;
+	font-weight: bold;
+}
+
+article>button:hover {
+	box-shadow: 0px 0px 10px white;
 	cursor: pointer;
-	transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-	box-shadow: 0 4px 14px rgba(17, 153, 142, 0.35);
-	letter-spacing: 0.3px;
-	width: 100%;
-	font-family: inherit;
-}
-
-article > button:hover {
-	transform: translateY(-2px);
-	box-shadow: 0 6px 20px rgba(17, 153, 142, 0.45);
-}
-
-article > button:active {
-	transform: translateY(0);
-	box-shadow: 0 2px 8px rgba(17, 153, 142, 0.3);
 }
 
 button#btnDelete {
-	background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%);
-	box-shadow: 0 4px 14px rgba(235, 51, 73, 0.35);
-}
-
-button#btnDelete:hover {
-	box-shadow: 0 6px 20px rgba(235, 51, 73, 0.45);
-}
-
-button#btnShuffle {
-	background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-	box-shadow: 0 4px 14px rgba(245, 87, 108, 0.35);
-}
-
-button#btnShuffle:hover {
-	box-shadow: 0 6px 20px rgba(245, 87, 108, 0.45);
+	background: red;
 }
 
 #result {
 	display: none;
-	width: 100%;
-	max-width: 500px;
-	margin: 0;
-	padding: 18px 24px;
-	background: rgba(255, 255, 255, 0.95);
-	backdrop-filter: blur(10px);
-	border-radius: 16px;
-	border: 1px solid rgba(102, 126, 234, 0.3);
-	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-	text-align: center;
-	font-weight: 500;
-	color: #2d3748;
-	font-size: 15px;
-	letter-spacing: 0.2px;
-}
-
-/* Подредба на секциите */
-body {
-	display: grid;
-	grid-template-columns: 1fr;
-	justify-items: center;
-	gap: 24px;
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-	body {
-		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: auto auto;
-		align-items: start;
-	}
-	
-	article:first-of-type {
-		grid-column: 1 / -1;
-		justify-self: center;
-	}
-	
-	#result {
-		grid-column: 1 / -1;
-		justify-self: center;
-	}
-}
-
-@media (min-width: 1024px) {
-	article {
-		max-width: 340px;
-	}
-	
-	article:first-of-type {
-		max-width: 600px;
-	}
+	width: 50%;
+	margin: 10px auto;
+	padding: 10px 15px;
+	background: #DDD;
+	border-radius: 5px;
+	border: 1px solid #777;
 }
